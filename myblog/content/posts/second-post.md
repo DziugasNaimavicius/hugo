@@ -4,11 +4,11 @@ draft = false
 title = 'Second Post'
 +++
 
-Here is a standing cat:
+Here is a cute standing cat!:
 
 ![Cat](/images/cat.jpg)
 
-And here's a code block:
+And here's a code block!:
 
 ```python
 def hello():
