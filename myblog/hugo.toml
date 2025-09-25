@@ -1,0 +1,29 @@
+baseURL = "https://dziugasnaimavicius.github.io/"
+languageCode = "en-us"
+title = "My Blog"
+theme = "PaperMod"
+canonifyURLs = true
+enableGitInfo = true
+
+[params]
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+
+# ------------------------
+# Security configuration
+# ------------------------
+[security]
+
+  [security.exec]
+    allow = ['^go$', '^npx$', '^postcss$', '^git$']
+    osEnv = ['(?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$']
+
+  [security.funcs]
+    getenv = ['^HUGO_', '^CI$', '^LC_']
+
+  [security.http]
+    methods = ['(?i)GET|POST']
+    urls = ['.*']
